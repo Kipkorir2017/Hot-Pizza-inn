@@ -15,17 +15,35 @@ html{
     float: left;
     border-radius: 50%;
 }
-.center1 {
-    padding:1%;
-    padding-left: 10%; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  .center1 p{
-    text-align: center;
-    font-weight: 700;
-  }
+
+ .first-row{
+     display: flex;
+     justify-content: space-evenly;
+     padding-top: 2%;
+ }
+ .second-row{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+
    #pizza-head{
       text-align: center;
   }
+  .order h5{
+      text-align: center;
+      font-weight: 900;
+  }
+  #pizza-number{
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+  .selectItems{
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+     
+  }
+ 
