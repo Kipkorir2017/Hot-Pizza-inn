@@ -23,6 +23,9 @@ function validateLocation(){
         alert("Provide a valid location");
         return false;
     }
+    else {
+        alert("your order will be delivered to your location");
+    }
    
 }
 function MakeOrder(type,size,crust,topping,quantity){
