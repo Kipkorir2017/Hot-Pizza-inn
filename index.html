@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -134,22 +134,14 @@
                     </select> <br>
                     Number of pizza <br>
                     <input type="number" id="pizza-number"> <br>
-                    <button type="submit" id="sub-button">Checkout</button> 
-
-
+                    <input type="radio" id="delivery">Be delivered
+                    <input type="radio" id="delivery1">No delivery<br><br>
+                    <input type="text" id="name" placeholder="Your Name..."> <br><br> 
+                    <input type="number" id="phoneNumber" placeholder="Phone Number..."> <br><br>
+                    <input type="text" id="location" placeholder="Enter your Location..."> <br><br>
+                    <a href="#" id="sub-button" class="btn btn-primary">Check Order Details</a>
+                    <button type="submit" id="submButton" class="btn btn-primary">Checkout</button>
                 </form>
-                <div class="container form2">
-                    <button type="button" id="display">Make Delivery</button>
-                    <div class="row delivery">
-                        <form action="" onsubmit="validateLocation()">
-                            <input type="text" id="name" placeholder="Your Name..."> <br> <br>
-                            <input type="number" id="phoneNumber" placeholder="Phone Number..."> <br> <br>
-                            <input type="text" id="location" placeholder="Enter your Location..."> <br> <br>
-                            <button id="button-checkout"> proceed To Checkout</button>
-                        </form>
-
-                    </div>
-                </div>
                 <div class="row display-totals">
                     <h4 id="flavour">Favorite Flavour:</h4>
                     <h4 id="Size">Pizza Size:</h4>

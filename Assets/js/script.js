@@ -24,7 +24,7 @@ function validateLocation(){
         return false;
     }
     else {
-        alert("your order will be delivered to your location");
+        alert("your order will be delivered to your location at a fee of kshs.300");
     }
    
 }
@@ -168,14 +168,13 @@ MakeOrder.prototype.type=function(){
 
 // jquerry to show hidden elements
 $(document).ready(function(){
-    $("#display").click(function(event){
-        $(".delivery").show();
-        event.preventDefault();
+    $("#sub-button").click(function(event){
+        $(".form2").show();
+        // event.preventDefault();
     });
     $("#button-checkout").click(function(event){
-        event.preventDefault();
+        // event.preventDefault();
         $(".display-totals").show();
     })
 });
 
-$("")
