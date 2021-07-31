@@ -51,14 +51,21 @@
   .form1{
     background-color: rgb(238, 191, 104);
 } 
-  input#pizza-number{
-     text-align: center;
+  input#pizza-number{ 
      width: 50%;
      height: 30%;
      padding-bottom: 0.7%;
-     padding-left: 10%;
      margin-bottom: 1%;
 
+  }
+  #hidden{
+      display: none;
+  }
+  #submButton{
+      display:none
+  }
+  .display-totals{
+      display: none;
   }
   #sub-button{
     background-color: orange;
