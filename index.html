@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/css/bootstrap.css">
     <link rel="stylesheet" href="Assets/css/style.css">
+    <script src="https://kit.fontawesome.com/598c6b517f.js" crossorigin="anonymous"></script>
     <script src="/Assets/js/jquery-3.6.0.js"></script>
     <script src="/Assets/js/script.js"></script>
     <title>Pizza inn</title>
@@ -58,8 +59,8 @@
                 <img src="Assets/images/chicken pizza.jpg" class="card-img-top" alt="Chicken Pizza">
                 <div class="card-body">
                     <h5 class="card-title">chicken pizza</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text">Chicken breast, BBQ sauce, fresh onions, cheeses made with 100% real
+                        mozzarella, provolone, and cheddar on a cheesy cheddar crust.</p>
 
                 </div>
             </div>
@@ -81,51 +82,81 @@
                 </div>
             </div>
         </div>
-        <!-- Order section -->
         <div class="row">
-            <div class="col order">
-                <h5>Make Your Order</h5>
-                <div class="col">
-                    <form action="">
-
-                        <label for="">Choose your pizza Flavour:</label>
-                        <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
-                            <option selected></option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select> <br>
-                        <label for="">Choose your Size:</label>
-                        <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
-                            <option selected></option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select> <br>
-                        <label for="">Choose your Favorite Crust:</label>
-                        <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
-                            <option selected></option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select> <br>
-                        <label for="">Choose your pizza topping:</label>
-                        <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
-                            <option selected></option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select> <br>
-                        Number of Pizza:<br>
-                        <input type="number" id="pizza-number">
-                    </form>
-                </div>
-
-            </div>
+            <div class="small"><img src="" alt=""></div>
+            <div class="medium"><img src="" alt=""></div>
+            <div class="large"><img src="" alt=""></div>
 
         </div>
+        <!-- Order section -->
+        <div class="row form-inputs">
+            <div class="col">
+                <form action="" class="form1">
+                    <h5>Make Your Order</h5>
 
+                    Choose your pizza Flavour:
+                    <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
+                        <option selected></option>
+                        <option value="1">Meat Pizza</option>
+                        <option value="2">Veggie Pizza</option>
+                        <option value="3">Margherita Pizza</option>
+                        <option value="4">Hawaiian Piza</option>
+                        <option value="5">Chicken Pizza</option>
+                        <option value="6">pepperoni Pizza</option>
+                    </select> <br>
+                    Choose your Size:
+                    <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
+                        <option selected></option>
+                        <option value="1">Small</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>
+                    </select> <br>
+                    Choose your Favorite Crust:
+                    <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
+                        <option selected></option>
+                        <option value="1">Crispy</option>
+                        <option value="2">Stuffed</option>
+                        <option value="3">Gluten-free</option>
+                        <option value="4">Flatbread.</option>
+                    </select> <br>
+                    Choose your pizza topping:
+                    <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
+                        <option selected></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select> <br>
+                    Number of <br>
+                    <input type="number" id="pizza-number">
+                </form>
+                <div class="container form2">
+                    <div class="row delivery">
+                        <form action="">
 
+                            <input type="text" id="location" placeholder="Enter your Location..."> <br> <br>
+                            <input type="text" id="name" placeholder="Your Name..."> <br> <br>
+                            <input type="number" id="phone-number" placeholder="Phone Number..."> <br> <br>
+                            
+
+                        </form>
+                    </div>
+                </div>
+                <button id="button">Make Delivery</button> <button id="button"> proceed To Checkout</button>
+            </div>
+        </div>
+        <div class="row footer">
+            <footer>
+                <div id="footer-icons">
+                    <a href="https://touch.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/" class="fa fa-pinterest"></a>
+                </div>
+                <p class="copyright">	&copy; HOT-PIZZA INN 2021.</p>
+
+            </footer>
+
+        </div>
 
     </div>
 </body>
