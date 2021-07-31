@@ -15,7 +15,7 @@
 
 <body>
     <!-- Head section -->
-    <div class="container bg-clr">
+    <div class="container-fluid bg-clr">
 
         <div class="row nav">
             <div class="col-3 logo">
@@ -33,21 +33,25 @@
                 <img src="Assets/images/meat.jpg" class="card-img-top" alt="meat Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Meat Pizza</h5>
-                    <p class="card-text">The meat toppings can vary, but often include cooked and crumbled Italian sausage or ground beef, bacon, pepperoni, and sometimes sliced ham..</p>
+                    <p class="card-text">The meat toppings can vary, but often include cooked and crumbled Italian
+                        sausage or ground beef, bacon, pepperoni, and sometimes sliced ham..</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="Assets/images/veggie.jpg" class="card-img-top " alt="Veggie Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Veggie Pizza</h5>
-                    <p class="card-text">Veggie is fresh and full of flavor, featuring cherry tomatoes, artichoke, bell pepper, olives, red onion and some hidden (and optional) baby spinach.</p>
+                    <p class="card-text">Veggie is fresh and full of flavor, featuring cherry tomatoes, artichoke, bell
+                        pepper, olives, red onion and some hidden (and optional) baby spinach.</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="Assets/images/Margherita Pizza.jpg" class="card-img-top" alt="Margherita Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Margherita Pizza</h5>
-                    <p class="card-text">This pizza recipe begins with my homemade pizza dough. Top with fresh mozzarella and tomatoes, then finish it off with garden-fresh basil. This is an easy pizza recipe with unbeatable flavor!.</p>
+                    <p class="card-text">This pizza recipe begins with my homemade pizza dough. Top with fresh
+                        mozzarella and tomatoes, then finish it off with garden-fresh basil. This is an easy pizza
+                        recipe with unbeatable flavor!.</p>
                 </div>
             </div>
         </div>
@@ -65,7 +69,9 @@
                 <img src="Assets/images/hawaiian pizza.jpg" class="card-img-top" alt="Hawaiian Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Hawaiian Pizza</h5>
-                    <p class="card-text">This crowd-pleasing pizza recipe starts with my homemade pizza crust and is finished with a sprinkle of crispy bacon. It’s salty, sweet, cheesy, and undeniably delicious!.</p>
+                    <p class="card-text">This crowd-pleasing pizza recipe starts with my homemade pizza crust and is
+                        finished with a sprinkle of crispy bacon. It’s salty, sweet, cheesy, and undeniably delicious!.
+                    </p>
 
                 </div>
             </div>
@@ -73,7 +79,9 @@
                 <img src="Assets/images/pepperoni.jpg" class="card-img-top" alt="pepperoni Pizza">
                 <div class="card-body">
                     <h5 class="card-title">pepperoni Pizza</h5>
-                    <p class="card-text">Pepperoni Pizza has everything you want—a great crust, gooey cheese, and tons of pepperoni. The secret to great pepperoni flavor? Hide extra under the cheese! Who needs delivery?.</p>
+                    <p class="card-text">Pepperoni Pizza has everything you want—a great crust, gooey cheese, and tons
+                        of pepperoni. The secret to great pepperoni flavor? Hide extra under the cheese! Who needs
+                        delivery?.</p>
                 </div>
             </div>
         </div>
@@ -81,12 +89,12 @@
         <!-- Order section -->
         <div class="row form-inputs">
             <div class="col">
-                <form action="" class="form1">
+                <form action="" class="form1" name="formName" onsubmit="validatePizza()">
                     <h5>Make Your Order</h5>
 
                     Choose your pizza Flavour:
-                    <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
-                        <option selected></option>
+                    <select id="fieldArea"  class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
+                        <option selected value=""></option>
                         <option value="1">Meat Pizza</option>
                         <option value="2">Veggie Pizza</option>
                         <option value="3">Margherita Pizza</option>
@@ -95,33 +103,33 @@
                         <option value="6">pepperoni Pizza</option>
                     </select> <br>
                     Choose your Size:
-                    <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
-                        <option selected></option>
+                    <select name="feildArea" class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
+                        <option selected value=""></option>
                         <option value="1">Small</option>
                         <option value="2">Medium</option>
                         <option value="3">Large</option>
                     </select> <br>
                     Choose your Favorite Crust:
-                    <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
-                        <option selected></option>
+                    <select name="feildArea" class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
+                        <option selected value=""></option>
                         <option value="1">Crispy</option>
                         <option value="2">Stuffed</option>
                         <option value="3">Gluten-free</option>
                         <option value="4">Flatbread.</option>
                     </select> <br>
                     Choose your pizza topping:
-                    <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
-                        <option selected></option>
+                    <select name="feildArea"  class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
+                        <option selected value=""></option>
                         <option value="1">Sausage</option>
                         <option value="2">Onions</option>
                         <option value="3">Black olives.</option>
                         <option value="4">meat</option>
                         <option value="5">Green peppers</option>
-                       
+
                     </select> <br>
                     Number of pizza <br>
                     <input type="number" id="pizza-number"> <br>
-                     <button type="submit" id="sub-button">Checkout</button>
+                    <button type="submit" id="sub-button">Checkout</button>
 
                 </form>
                 <div class="container form2">
@@ -131,27 +139,23 @@
                             <input type="text" id="location" placeholder="Your Name..."> <br> <br>
                             <input type="text" id="name" placeholder="Phone Number..."> <br> <br>
                             <input type="number" id="phone-number" placeholder="Enter your Location..."> <br> <br>
-
-
+                            <button type="submit" id="button-delivery">Make Delivery</button>
+                            <button type="submit" id="button-checkout"> proceed To Checkout</button>
                         </form>
                     </div>
                 </div>
                 <div class="row display-totals">
                     <h4 id="flavour">Favorite Flavour:</h4>
                     <h4 id="Size">Pizza Size:</h4>
-                    <h4 id="crust" >Crust:</h4>
+                    <h4 id="crust">Crust:</h4>
                     <h4 id="topp">Topping:</h4>
                     <h4 id="number">Number of Pizza:</h4>
 
                 </div>
-                <div class="row">
-                    <form action="" class="form-buttons">
-                        <button type="submit" id="button-delivery">Make Delivery</button>
-                        <button type="submit" id="button-checkout"> proceed To Checkout</button>
-                    </form>
-                </div>
+
             </div>
         </div>
+        <!-- footer section -->
         <div class="row footer">
             <footer>
                 <div id="footer-icons">
