@@ -46,10 +46,11 @@
   input#pizza-number{
      text-align: center;
      width: 50%;
-     height: 10%;
-     margin-bottom: 3%;
+     height: 30%;
+     padding-bottom: 1%;
      padding-left: 10%;
-     box-sizing: border-box;
+     margin-bottom: 0.7%;
+
   }
   .selectItems{
       width: 50%;
@@ -82,7 +83,7 @@ form.form-buttons{
  button{
      background-color: orange;
  }
- 
+
  /* footer section */
   .footer{
     width: auto;
