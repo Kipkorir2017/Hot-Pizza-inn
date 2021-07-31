@@ -1,6 +1,7 @@
 # HOT-PIZZA INN
 ## By Benjamin Kipkorir
-This is Web Application where you can make Pizza order,it has a form, where you can select type of pizza, size, crust and toppings
+This is Web Application where you can make  order Pizza
+,it has a form, where you can select type of pizza, size, crust and toppings
 ## SetUp/installation Requirement
 * Net
 * browser on your pc
@@ -20,5 +21,5 @@ Feel free to call me or email me with respective contacts detail:
 * +254725427016
 * pkobenj41@gmail.com
 ### License
-* MIT license
+* <a href="https://github.com/Kipkorir2017/Hot-Pizza-inn/blob/gh-pages/Licence">MIT license</a>
 Copyright (c) 2021 **{Benjamin kipkorir}**
