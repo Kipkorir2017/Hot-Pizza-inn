@@ -69,6 +69,9 @@
 .form2 input{
     display: none;
 }
+.display-totals{
+    display: none;
+}
 form.form-buttons{
     text-align: center;
     
@@ -79,6 +82,8 @@ form.form-buttons{
  button{
      background-color: orange;
  }
+ 
+ /* footer section */
   .footer{
     width: auto;
     padding: 5%;

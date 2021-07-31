@@ -33,24 +33,21 @@
                 <img src="Assets/images/meat.jpg" class="card-img-top" alt="meat Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Meat Pizza</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text">The meat toppings can vary, but often include cooked and crumbled Italian sausage or ground beef, bacon, pepperoni, and sometimes sliced ham..</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="Assets/images/veggie.jpg" class="card-img-top " alt="Veggie Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Veggie Pizza</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text">Veggie is fresh and full of flavor, featuring cherry tomatoes, artichoke, bell pepper, olives, red onion and some hidden (and optional) baby spinach.</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="Assets/images/Margherita Pizza.jpg" class="card-img-top" alt="Margherita Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Margherita Pizza</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text">This pizza recipe begins with my homemade pizza dough. Top with fresh mozzarella and tomatoes, then finish it off with garden-fresh basil. This is an easy pizza recipe with unbeatable flavor!.</p>
                 </div>
             </div>
         </div>
@@ -68,8 +65,7 @@
                 <img src="Assets/images/hawaiian pizza.jpg" class="card-img-top" alt="Hawaiian Pizza">
                 <div class="card-body">
                     <h5 class="card-title">Hawaiian Pizza</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text">This crowd-pleasing pizza recipe starts with my homemade pizza crust and is finished with a sprinkle of crispy bacon. It’s salty, sweet, cheesy, and undeniably delicious!.</p>
 
                 </div>
             </div>
@@ -77,8 +73,7 @@
                 <img src="Assets/images/pepperoni.jpg" class="card-img-top" alt="pepperoni Pizza">
                 <div class="card-body">
                     <h5 class="card-title">pepperoni Pizza</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text">Pepperoni Pizza has everything you want—a great crust, gooey cheese, and tons of pepperoni. The secret to great pepperoni flavor? Hide extra under the cheese! Who needs delivery?.</p>
                 </div>
             </div>
         </div>
@@ -117,11 +112,14 @@
                     Choose your pizza topping:
                     <select class="form-select form-select-sm selectItems" aria-label=".form-select-sm example">
                         <option selected></option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">Sausage</option>
+                        <option value="2">Onions.</option>
+                        <option value="3">Black olives.</option>
+                        <option value="4">meat.</option>
+                        <option value="5">Green peppers.</option>
+                       
                     </select> <br>
-                    Number of <br>
+                    Number of pizza <br>
                     <input type="number" id="pizza-number">
                 </form>
                 <div class="container form2">
@@ -136,10 +134,20 @@
                         </form>
                     </div>
                 </div>
-                <form action="" class="form-buttons" >
-                    <button type="submit" id="button-delivery">Make Delivery</button>
-                    <button type="submit" button-checkout"> proceed To Checkout</button>
-                </form>
+                <div class="row display-totals">
+                    <h4 id="flavour">Favorite Flavour:</h4>
+                    <h4 id="Size">Pizza Size:</h4>
+                    <h4 id="crust" >Crust:</h4>
+                    <h4 id="topp">Topping:</h4>
+                    <h4 id="number">Number of Pizza:</h4>
+
+                </div>
+                <div class="row">
+                    <form action="" class="form-buttons">
+                        <button type="submit" id="button-delivery">Make Delivery</button>
+                        <button type="submit" id="button-checkout"> proceed To Checkout</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="row footer">
