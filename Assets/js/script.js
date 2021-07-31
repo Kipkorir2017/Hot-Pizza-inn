@@ -25,3 +25,9 @@ function validateLocation(){
     }
    
 }
+// jquerry to show hidden elements
+$(document).ready(function(){
+    $("").click(function(event){
+        $("").show();
+    });
+});

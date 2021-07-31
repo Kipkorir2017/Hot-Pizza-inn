@@ -80,10 +80,10 @@
 
 }
 .delivery{
-    display: none;
+    display: none; 
 } 
 .display-totals{
-    display: none;
+     display: none; 
 }
 form.form-buttons{
     text-align: center;
