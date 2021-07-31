@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,7 +93,7 @@
                     <h5>Make Your Order</h5>
 
                     Choose your pizza Flavour:
-                    <select id="fieldArea" class="form-select form-select-sm selectItems"
+                    <select name="fieldArea" class="form-select form-select-sm selectItems"
                         aria-label=".form-select-sm example">
                         <option selected value=""></option>
                         <option value="1">Meat Pizza</option>
@@ -107,9 +107,9 @@
                     <select name="fieldArea" class="form-select form-select-sm selectItems"
                         aria-label=".form-select-sm example">
                         <option selected value=""></option>
-                        <option value="1">Small</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>
+                        <option value="1">Small @Ksh.600</option>
+                        <option value="2">Medium @Kshs.900</option>
+                        <option value="3">Large @Kshs</option>
                     </select> <br>
                     Choose your Favorite Crust:
                     <select name="fieldArea" class="form-select form-select-sm selectItems"
@@ -133,11 +133,12 @@
                     </select> <br>
                     Number of pizza <br>
                     <input type="number" id="pizza-number"> <br>
-                    <button type="submit" id="sub-button">Checkout</button>
+                    <!-- <button type="submit" id="sub-button">Checkout</button> -->
 
 
                 </form>
                 <div class="container form2">
+                    <button type="button" id="display">Make Delivery</button>
                     <div class="row delivery">
                         <form action="" onsubmit="validateLocation()">
                             <input type="text" id="name" placeholder="Your Name..."> <br> <br>
@@ -145,6 +146,7 @@
                             <input type="text" id="location" placeholder="Enter your Location..."> <br> <br>
                             <button id="button-checkout"> proceed To Checkout</button>
                         </form>
+
                     </div>
                 </div>
                 <div class="row display-totals">

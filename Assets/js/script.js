@@ -27,7 +27,14 @@ function validateLocation(){
 }
 // jquerry to show hidden elements
 $(document).ready(function(){
-    $("").click(function(event){
-        $("").show();
+    $("#display").click(function(event){
+        $(".delivery").show();
+        event.preventDefault();
     });
+    $("#button-checkout").click(function(event){
+        event.preventDefault();
+        $(".display-totals").show();
+    })
 });
+
+$("")
