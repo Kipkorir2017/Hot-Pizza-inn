@@ -79,9 +79,9 @@
     width: fit-content;
 
 }
- .form2 input{
+.delivery{
     display: none;
-}  
+} 
 .display-totals{
     display: none;
 }

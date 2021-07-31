@@ -1,3 +1,4 @@
+// validating first form
 function validatePizza(){
 if (formName.fieldArea.value==""){
     alert("Kindly make a complete order first!")
@@ -5,6 +6,7 @@ if (formName.fieldArea.value==""){
 }
 
 }
+// validating second form
 
 function validateLocation(){
     var name=document.getElementById("name").value;
