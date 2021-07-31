@@ -1,6 +1,14 @@
+.bg-clr{
+    background-color: rgb(243, 206, 137);
+}
 .nav{
     background-color:orange;
     padding: 5%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    
     
 }
  .header{
@@ -36,13 +44,13 @@
     padding-bottom: 1%;
 }
 .form1 h5{
-      text-align: center;
-      font-weight: 900;
-      padding-top: 3%;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 3%;
   }
   .form1{
-    background-color: rgb(202, 141, 28);
-}
+    background-color: rgb(238, 191, 104);
+} 
   input#pizza-number{
      text-align: center;
      width: 50%;
@@ -63,13 +71,12 @@
   }
   .form2{
     padding-top: 3%;
-    background-color:white;
     width: fit-content;
 
 }
-.form2 input{
+/* .form2 input{
     display: none;
-}
+} */
 .display-totals{
     display: none;
 }
