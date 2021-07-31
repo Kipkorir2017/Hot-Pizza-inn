@@ -61,76 +61,76 @@ function MakeOrder(type, size, crust, topping, quantity) {
     this.quantity = quantity;
 }
 // returning the prices of crust
-MakeOrder.prototype.crust = function () {
+MakeOrder.prototype.getCrust = function () {
     if (this.crust == 1) {
-        return 100;
+        return 100
     }
-    if (this.crust == 2) {
-        return 80;
+    else if (this.crust == 2) {
+        return 80
     }
-    if (this.crust == 3) {
-        return 150;
+    else if (this.crust == 3) {
+        return 150
     }
-    if (this.crust == 4) {
-        return 180;
-    }
+    else if (this.crust == 4) {
+        return 180
+    };
 }
 // returning the prices of toppings
-MakeOrder.prototype.topping = function () {
+MakeOrder.prototype.getTopping = function () {
     if (this.topping == 1) {
-        return 100;
+        return 100
     }
-    if (this.topping == 2) {
+     else if (this.topping == 2) {
         return 120
     }
-    if (this.topping == 3) {
-        return 150;
+    else if (this.topping == 3) {
+        return 150
     }
-    if (this.topping == 4) {
-        return 180;
+    else if (this.topping == 4) {
+        return 180
     }
-    if (this.topping == 5) {
-        return 200;
+    else if (this.topping == 5) {
+        return 200
     }
-    if (this.topping == 6) {
-        return 250;
-    }
+    else if (this.topping == 6) {
+        return 250
+    };
 
 }
 // returning the price  of Pizza 
-MakeOrder.prototype.type = function () {
+MakeOrder.prototype.getSize = function () {
     if (this.type == 1) {
-        if (this.size = 1) {
-            return 600;
+        if (this.size ==1) {
+            return 600
         }
         else if (this.size == 2) {
-            return 900;
+            return 900
         }
         else if (this.size == 3) {
-            return 1200;
-        }
+            return 1200
+        };
 
     }
     else if (this.type == 2) {
         if (this.size == 1) {
-            return 550;
+            return 550
         }
         else if (this.size == 2) {
-            return 650;
+            return 650
         }
         else if (this.size == 3) {
-            return 1250;
+            return 1250
         }
     }
     else if (this.type == 3) {
-        if (this.size = 1) {
-            return 600;
+        if (this.size == 1) {
+            return 600
         }
         else if (this.size == 2) {
-            return 750;
+            return 750
         }
         else if (this.size == 3) {
-            return 1450;
+            return 1450
         }
     }
     else if (this.type == 4) {
@@ -138,7 +138,7 @@ MakeOrder.prototype.type = function () {
             return 400
         }
         else if (this.size == 2) {
-            return 800;
+            return 800
         }
         else if (this.size == 3) {
             return 1600
@@ -146,66 +146,54 @@ MakeOrder.prototype.type = function () {
     }
     else if (this.type == 5) {
         if (this.size == 1) {
-            return 350;
+            return 350
         }
         else if (this.size == 2) {
-            return 700;
+            return 700
         }
         else if (this.size == 3) {
-            return 1400;
+            return 1400
         }
     }
     else if (this.type == 6) {
         if (this.size == 1) {
-            return 300;
+            return 300
         }
         else if (this.size == 2) {
-            return 750;
+            return 750
         }
         else if (this.size == 3) {
-            return 1450;
+            return 1450
+        }
+        else{
+            return false;
         }
     }
 }
 
 $(document).ready(function () {
     $("#submButton").click(function (event) {
-        var inputType = parseInt($("#fieldAreaType option:selected").val());
-        var inputSize = parseInt($("#fieldAreaSize option:selected").val());
-        var inputCrust = parseInt($("#fieldAreaCrust option:selected").val());
-        var inputTopping = parseInt($("#fieldAreaTopping option:selected").val());
+        var inputType = parseInt($("#Type option:selected").val());
+        var inputSize = parseInt($("#Size option:selected").val());
+        var inputCrust = parseInt($("#Crust option:selected").val());
+        var inputTopping = parseInt($("#Topping option:selected").val());
         var quantity = parseInt($(".quantity").val());
-        var newOrder = (inputType, inputSize, inputCrust, inputTopping, quantity);
-        var newPizzaPrice = (newOrder.Size() + newOrder.crust() + newOrder.topping()) * quantity
-        alert(inputType)
-        alert(newPizzaPrice)
+        var newOrder = new MakeOrder(inputType, inputSize, inputCrust, inputTopping);
+        var newPizzaPrice = (newOrder.getSize() + newOrder.getCrust() + newOrder.getTopping()) * quantity;
+        alert("Congratulation" +   +"your Pizza Will be Delivered in a Short while at this Location")
+        $("#total").text($(newPizzaPrice).val());
         event.preventDefault();
     })
 
 });
+    
+$(document).ready(function(){
+    $("#sub-button").click(function(event){
+        event.preventDefault();
+        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    });
+});
 
 // jquerry to show hidden elements
 $(document).ready(function () {
@@ -214,9 +202,18 @@ $(document).ready(function () {
         // event.preventDefault();
     });
     $("#sub-button").click(function (event) {
-        // event.preventDefault();
+         event.preventDefault();
+        
         $(".display-totals,#submButton").toggle();
         $("#sub-button").toggle();
-    })
+        $("#pflavour").text($("#Type option:selected").text());
+        $("#pSize").text($("#Size option:selected").text());
+        $("#pCrust").text($("#Crust option:selected").text());
+        $("#pTop").text($("#Topping option:selected").text());
+        $("#pNumber").text($(".quantity").val());
+        
+    });
 });
+
+
 

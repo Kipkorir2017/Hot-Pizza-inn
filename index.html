@@ -94,7 +94,7 @@
                     <h5>Make Your Order</h5>
 
                     Choose your pizza Flavour:
-                    <select name="fieldAreaType" class="form-select form-select-sm selectItems"
+                    <select id="Type" class="form-select form-select-sm selectItems"
                         aria-label=".form-select-sm example">
                         <option selected value=""></option>
                         <option value="1">Meat Pizza</option>
@@ -105,15 +105,15 @@
                         <option value="6">pepperoni Pizza</option>
                     </select> <br>
                     Choose your Size:
-                    <select name="fieldAreaSize" class="form-select form-select-sm selectItems"
+                    <select id="Size" class="form-select form-select-sm selectItems"
                         aria-label=".form-select-sm example">
                         <option selected value=""></option>
                         <option value="1">Small @Ksh.600</option>
                         <option value="2">Medium @Kshs.900</option>
-                        <option value="3">Large @Kshs 1200</option>
+                        <option value="3">Large @Kshs .1200</option>
                     </select> <br>
                     Choose your Favorite Crust:
-                    <select name="fieldAreaCrust" class="form-select form-select-sm selectItems"
+                    <select id="Crust" class="form-select form-select-sm selectItems"
                         aria-label=".form-select-sm example">
                         <option selected value=""></option>
                         <option value="1">Crispy</option>
@@ -122,7 +122,7 @@
                         <option value="4">Flatbread.</option>
                     </select> <br>
                     Choose your pizza topping:
-                    <select name="fieldAreaTopping" class="form-select form-select-sm selectItems"
+                    <select id="Topping" class="form-select form-select-sm selectItems"
                         aria-label=".form-select-sm example">
                         <option selected value=""></option>
                         <option value="1">Sausage</option>
@@ -145,12 +145,12 @@
                     <button type="submit" id="submButton" class="btn btn-primary">Checkout</button>
                 </form>
                 <div class="row display-totals">
-                    <h4 id="flavour">Favorite Flavour:</h4>
-                    <h4 id="Size">Pizza Size:</h4>
-                    <h4 id="crust">Crust:</h4>
-                    <h4 id="topp">Topping:</h4>
-                    <h4 id="number">Number of Pizza:</h4>
-                    <h4 id="number">Total charges:</h4>
+                    <h4 id="flavour">Favorite Flavour:<span id="pflavour">check here</span></h4>
+                    <h4 id="Size">Pizza Size:<span id="pSize">check here</span></h4>
+                    <h4 id="crust">Crust:<span id="pCrust">check here</span></h4>
+                    <h4 id="topp">Topping:<span id="pTop">check here</span></h4>
+                    <h4 id="number">Number of Pizza:<span id="pNumber">check here</span></h4>
+                    <h4 id="number">Total charges:<span id="total">check here</span></h4>
 
                 </div>
 
