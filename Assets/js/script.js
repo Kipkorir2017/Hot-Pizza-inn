@@ -25,6 +25,37 @@ function validateLocation(){
     }
    
 }
+function MakeOrder(type,size,crust,topping,quantity){
+    this.type=type;
+    this.size=size;
+    this.crust=crust;
+    this.topping=topping;
+    this.quantity=quantity;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // jquerry to show hidden elements
 $(document).ready(function(){
     $("#display").click(function(event){
