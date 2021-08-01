@@ -1,11 +1,6 @@
 // validating first form
 function validatePizza() {
     var quantity=document.getElementById("pizza-number").value;
-    var name = document.getElementById("name").value;
-    var location = document.getElementById("location").value;
-    var phoneNumber = document.getElementById("phoneNumber").value;
-    var deliver = document.getElementById("delivery").checked;
-    var noDeliver = document.getElementById("delivery1").checked;
 
     if (formName.type.value=="") {
         alert("Select your favorite flavour");
@@ -29,12 +24,21 @@ function validatePizza() {
         return false;
     }
 
-    else if (deliver == false && noDeliver == false) {
+
+    var deliver = document.getElementById("delivery").checked;
+    var noDeliver = document.getElementById("delivery1").checked;
+
+    if (deliver == false && noDeliver == false) {
         alert("check a button to proceed")
         return false;
     }
 
-    else if (name == "" || name.length < 3) {
+
+    var name = document.getElementById("name").value;
+    var location = document.getElementById("location").value;
+    var phoneNumber = document.getElementById("phoneNumber").value;
+
+    if (name == "" || name.length < 3) {
         alert("Provide a valid name:");
         return false;
     }
@@ -172,7 +176,6 @@ MakeOrder.prototype.getSize = function () {
 
 $(document).ready(function () {
     $("form").submit(function (event) {
-        event.preventDefault();
         var inputType = parseInt($("#type option:selected").val());
         var inputSize = parseInt($("#size option:selected").val());
         var inputCrust = parseInt($("#crust option:selected").val());
@@ -182,8 +185,8 @@ $(document).ready(function () {
         var location = $("#location").val();
         var newOrder = new MakeOrder(inputType, inputSize, inputCrust, inputTopping);
         var newPizzaPrice = (newOrder.getSize() + newOrder.getCrust() + newOrder.getTopping()) * quantity;
-        alert("Congratulation " + name + ", Delivery will be done in a Short while at this Location " + location + " Total cost: " + newPizzaPrice);
-       
+        alert("Congratulation " + name + ", Delivery will be done in a Short while at this Location Name: " + location + " Total cost: " + newPizzaPrice);
+        event.preventDefault();
     })
 
 });
@@ -192,7 +195,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#delivery").click(function (event) {
         $("#hidden").show();
-         event.preventDefault()
+        // event.preventDefault();
     });
     $("#sub-button").click(function (event) {
         event.preventDefault();
@@ -208,7 +211,6 @@ $(document).ready(function () {
 
     });
 });
-
 
 
 
