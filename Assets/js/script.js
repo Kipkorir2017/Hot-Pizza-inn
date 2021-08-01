@@ -185,7 +185,7 @@ $(document).ready(function () {
         var location = $("#location").val();
         var newOrder = new MakeOrder(inputType, inputSize, inputCrust, inputTopping);
         var newPizzaPrice = (newOrder.getSize() + newOrder.getCrust() + newOrder.getTopping()) * quantity;
-        alert("Hi" + name + ", Delivery will be done in a Short while at this Location Name: " + location + " Total cost: " + newPizzaPrice);
+        alert("Hi, Delivery will be done in a Short while at provided  Location,  Total cost: " + newPizzaPrice);
         event.preventDefault();
     })
     
