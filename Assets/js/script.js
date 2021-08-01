@@ -27,31 +27,31 @@ function validatePizza() {
 
     var deliver = document.getElementById("delivery").checked;
     var noDeliver = document.getElementById("delivery1").checked;
+    var name = document.getElementById("name").value;
+    var location = document.getElementById("location").value;
+    var phoneNumber = document.getElementById("phoneNumber").value;
 
     if (deliver == false && noDeliver == false) {
         alert("check a button to proceed")
         return false;
     }
+     if(deliver==true){
+        if (name == "" || name.length < 3) {
+            alert("Provide a valid name:");
+            return false;
+        }
+        else if (phoneNumber == "" || phoneNumber.length < 10) {
+            alert("provide a valid Phone Number")
+        }
+        else if (location == "" || location.length < 3) {
+            alert("Provide a valid location");
+            return false;
+        }
+        else {
+            alert("your order will be delivered to your location at a fee of kshs.300");
+        }
 
-
-    var name = document.getElementById("name").value;
-    var location = document.getElementById("location").value;
-    var phoneNumber = document.getElementById("phoneNumber").value;
-
-    if (name == "" || name.length < 3) {
-        alert("Provide a valid name:");
-        return false;
-    }
-    else if (phoneNumber == "" || phoneNumber.length < 10) {
-        alert("provide a valid Phone Number")
-    }
-    else if (location == "" || location.length < 3) {
-        alert("Provide a valid location");
-        return false;
-    }
-    else {
-        alert("your order will be delivered to your location at a fee of kshs.300");
-    }
+    };
 }
 
 
@@ -185,9 +185,11 @@ $(document).ready(function () {
         var location = $("#location").val();
         var newOrder = new MakeOrder(inputType, inputSize, inputCrust, inputTopping);
         var newPizzaPrice = (newOrder.getSize() + newOrder.getCrust() + newOrder.getTopping()) * quantity;
-        alert("Congratulation " + name + ", Delivery will be done in a Short while at this Location Name: " + location + " Total cost: " + newPizzaPrice);
+        alert("Hi" + name + ", Delivery will be done in a Short while at this Location Name: " + location + " Total cost: " + newPizzaPrice);
         event.preventDefault();
     })
+    
+    
 
 });
 
@@ -195,6 +197,16 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#delivery").click(function (event) {
         $("#hidden").show();
+        $("#delivery1").click(function(){
+            $(".display-totals,#submButton").toggle();
+            $("#sub-button").toggle();
+            $("#pflavour").text($("#type option:selected").text());
+            $("#pSize").text($("#size option:selected").text());
+            $("#pCrust").text($("#crust option:selected").text());
+            $("#pTop").text($("#topping option:selected").text());
+            $("#pNumber").text($(".quantity").val());
+        
+        });
         // event.preventDefault();
     });
     $("#sub-button").click(function (event) {
@@ -211,6 +223,5 @@ $(document).ready(function () {
 
     });
 });
-
 
 
