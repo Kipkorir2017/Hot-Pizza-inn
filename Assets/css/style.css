@@ -1,0 +1,125 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+.bg-clr{
+    background-color: rgb(243, 206, 137);
+}
+.nav{
+    background-color:orange;
+    padding: 1%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    
+    
+}
+ .header{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+.logo img{
+    float: left;
+    border-radius: 50%;
+}
+
+/* pizza sets section */
+#pizza-head{
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 900;
+}
+ .first-row{
+     display: flex;
+     justify-content: space-evenly;
+     padding-top: 2%;
+ }
+ .second-row{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+
+/* form section */
+.form-inputs{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+.form1 h5{
+    text-align: center;
+    font-weight: 900;
+    padding-top: 3%;
+  }
+  .form1{
+    background-color: rgb(238, 191, 104);
+} 
+  input#pizza-number{ 
+     width: 50%;
+     height: 30%;
+     padding-bottom: 0.7%;
+     margin-bottom: 1%;
+
+  }
+  #hidden{
+      display: none;
+  }
+  #submButton{
+      display:none
+  }
+  .display-totals{
+      display: none;
+  }
+  #sub-button{
+    background-color: orange;
+    border-radius: 20%;
+    margin-bottom: 2%;
+  }
+  #submButton{
+    background-color: orange;
+    border-radius: 20%;
+    margin-bottom: 2%;
+  }
+
+  .selectItems{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .form1{
+      text-align: center;
+  }
+  .form2{
+    padding-top: 3%;
+    width: fit-content;
+}
+form.form-buttons{
+    text-align: center;
+    
+ }
+ button{
+     background-color: orange;
+ }
+
+ /* footer section */
+  .footer{
+    width: auto;
+    padding-bottom: 4%;
+    background-color: orange;
+    text-align: center;
+
+      
+  }
+  .fa {
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+  
+  
+
+  
+ 
+ 
