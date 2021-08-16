@@ -48,7 +48,7 @@ function validatePizza() {
             return false;
         }
         else {
-            alert("your order will be delivered to your location at a fee of kshs.300");
+            alert("your Order will be delivered to your location at a fee of kshs.300");
         }
 
     };
